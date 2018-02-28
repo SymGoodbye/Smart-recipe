@@ -1,0 +1,6 @@
+<import src="../menu-lump/menu-lump-template.wxml" />
+<block wx:for="{{menu}}" wx:for-item="item">
+  <view catchtap='onMenuDetailTap' data-id='{{item.id}}'>
+    <template is="menuLumpTemplate" data="{{...item}}" />
+  </view>
+</block>

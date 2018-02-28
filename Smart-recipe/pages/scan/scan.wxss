@@ -1,0 +1,20 @@
+.saoma {
+  display: flex;
+  flex-direction: column;
+}
+
+.saoma_img {
+  height: 200rpx;
+  width: 200rpx;
+  position: fixed;
+  bottom: 0;
+  left: 40%;
+}
+
+.show {
+  width: 100%;
+  color: #666;
+  background-color: #fff;
+  height: auto;
+}
+

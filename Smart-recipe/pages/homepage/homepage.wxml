@@ -1,0 +1,41 @@
+<view class='container'>
+  <view wx:if="{{logining}}" class='login' bindtap='OnloginTap'>
+    <image class='img_dis' src='/images/distressed.png'></image>
+    <text class='log_text'>点击注册</text>
+  </view>
+
+  <view wx:if="{{loginSuccess}}" class='login'>
+    <image class='img_dis' src='/images/loveliness.png'></image>
+    <text class='log_text'>{{userName}}</text>
+  </view>
+  <view class="hr"></view>
+
+  <view wx:if="{{loginSuccess}}" class='body'>
+    <view class='body_'>
+      <image class='body_img' src='/images/icon/purse.png'></image>
+      <text class='body_text'>我的钱包</text>
+      <image class='body_arrow' src='/images/icon/arrow-right.png'></image>
+    </view>
+    <view class='body_' bindtap='onCollectedTap'>
+      <image class='body_img' src='/images/icon/collect.png'></image>
+      <text class='body_text'>我的收藏</text>
+      <image class='body_arrow' src='/images/icon/arrow-right.png'></image>
+    </view>
+    <view class='body_'>
+      <image class='body_img' src='/images/icon/set.png'></image>
+      <text class='body_text'>我的设置</text>
+      <image class='body_arrow' src='/images/icon/arrow-right.png'></image>
+    </view>
+    <view class='body_'>
+      <image class='body_img' src='/images/icon/about.png'></image>
+      <text class='body_text'>关于膳食</text>
+      <image class='body_arrow' src='/images/icon/arrow-right.png'></image>
+    </view>
+  </view>
+  <view wx:if="{{loginSuccess}}" class='change'>
+    <view class="hr_"></view>
+    <text class='change_text'>切换账号</text>
+  </view>
+
+  <text wx:if="{{logining}}" class='enter' bindtap='OnBindTap'>已有账号，立即登录</text>
+</view>

@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/welcome/welcome",
+    "pages/homepage/homepage",
+    "pages/menus/menus",
+    "pages/scan/scan",
+    "pages/menus/menu-detail/menu-detail",
+    "pages/menus/menu-list/menu-list",
+    "pages/homepage/login/login",
+    "pages/homepage/collected/collected"
+    
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#405f80",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/menus/menus",
+        "text": "菜谱",
+        "iconPath": "images/icon/news.png",
+        "selectedIconPath": "images/icon/news_hl.png"
+      },
+      {
+        "pagePath": "pages/scan/scan",
+        "text": "扫一扫",
+        "iconPath": "images/icon/saoyisao.png",
+        "selectedIconPath": "images/icon/saoyisao_hl.png"
+      },
+      {
+        "pagePath": "pages/homepage/homepage",
+        "text": "我的主页",
+        "iconPath": "images/icon/ciwei.png",
+        "selectedIconPath": "images/icon/ciwei_hl.png"
+      }
+    ]
+  }
+}

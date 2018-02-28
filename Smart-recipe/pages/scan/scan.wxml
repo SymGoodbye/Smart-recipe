@@ -1,0 +1,11 @@
+<view class="container">
+
+  <view class="saoma" bindtap="click">
+    <image class='saoma_img' src='/images/sao.png'></image>
+  </view>
+
+  <!--   <view class="show">{{show}}</view>
+
+  <button bindtap='tryTap'>试试</button>
+  <text bindtap='giveTap'>传给服务器信息</text> -->
+</view>

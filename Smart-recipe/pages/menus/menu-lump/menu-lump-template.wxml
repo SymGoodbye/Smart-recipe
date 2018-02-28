@@ -1,0 +1,15 @@
+<template name="menuLumpTemplate">
+  <view class='container'>
+    <image class='img' src='{{pic}}'></image>
+    <view class='middle_container'>
+      <text class='name'>{{name}}</text>
+      <text class='content'>{{tag}}</text>
+      <view class='inner_container'>
+        <image class='time_icon' src='/images/icon/time_icon.png'></image>
+        <text class='cookingTime'>{{cookingTime}}</text>
+        <image class='dinner_icon' src='/images/icon/people_icon.png'></image>
+        <text class='peoplenum'>{{peoplenum}}</text>
+      </view>
+    </view>
+  </view>
+</template>

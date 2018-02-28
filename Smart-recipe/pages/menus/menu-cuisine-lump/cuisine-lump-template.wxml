@@ -1,0 +1,7 @@
+<template name="cuisineLumpTemplate">
+  <view class='container_'>
+    <text class='title_'>{{title}}</text>
+    <image class='title_img_' src='{{title_img}}'></image>
+    <text class='content_'>{{content}}</text>
+  </view>
+</template>

@@ -1,0 +1,27 @@
+<view>
+  <image class='img_login' src='/images/login.jpg'></image>
+</view>
+<view id="adduser">
+  <form bindsubmit="formSubmit" bindreset="formReset">
+    <view class='login'>
+      <view class='space'>
+        <input name="userName" type='text' placeholder="请输入用户名(1~10个字符)" placeholder-class="placeholder"></input>
+        <view class="hr"></view>
+      </view>
+      <view class='space'>
+        <input name="password" type='text' placeholder="请输入密码(6~12个字符)" password="true" placeholder-class="placeholder"></input>
+        <view class="hr"></view>
+      </view>
+      <view class='space'>
+        <input name="Next_password" type='text' placeholder="请确认密码" password="true" placeholder-class="placeholder"></input>
+        <view class="hr"></view>
+      </view>
+
+      <view bindtap='OnBackTap' class="buttom">
+        <button type="primary" formType="submit">立即注册</button>
+        <button type='warn' formType="reset">清空</button>
+      </view>
+
+    </view>
+  </form>
+</view>

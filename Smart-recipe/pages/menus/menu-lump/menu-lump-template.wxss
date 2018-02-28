@@ -1,0 +1,63 @@
+.container {
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  margin: 30rpx 50rpx 50rpx;
+}
+
+
+.middle_container {
+  margin: auto 50rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.inner_container {
+  margin-top: 20rpx;
+  display: flex;
+  flex-direction: row;
+  vertical-align: middle;
+}
+
+.img {
+  width: 40%;
+  height: 225rpx;
+  border-radius: 2%;
+}
+
+.name {
+  font-size: 40rpx;
+  font-weight: 600;
+  color: #333;
+}
+
+.content {
+  margin-top: 20rpx;
+  font-size: 28rpx;
+  color: #333;
+}
+
+.cookingTime {
+  color: #999;
+  font-size: 20rpx;
+  margin-right: 3px;
+  margin-top: 2px;
+}
+
+.peoplenum {
+  color: #999;
+  font-size: 20rpx;
+  margin-top: 2px;
+}
+
+.time_icon {
+  height: 16px;
+  width: 16px;
+  margin-right: 7px;
+}
+
+.dinner_icon {
+  height: 16px;
+  width: 16px;
+  margin-right: 7px;
+}

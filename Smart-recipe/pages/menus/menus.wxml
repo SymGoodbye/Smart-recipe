@@ -1,0 +1,42 @@
+<import src="menu-cuisine-lump/cuisine-lump-template.wxml" />
+<import src="menu-lump/menu-lump-template.wxml" />
+
+<view class="search">
+  <icon type="search" class="search-img" size="13" color="#405f80"></icon>
+  <input type="text" placeholder="探寻你想要的美味~" placeholder-class="placeholder" bindfocus="onBindFocus" bindblur="onBindBlur" />
+  <image wx:if="{{searchPanelShow}}" src="/images/icon/xx.png" class="xx-img" bindtap="onCancelImgTap"></image>
+</view>
+
+<view wx:if="{{containerShow}}">
+  <swiper catchtap='onSwiperTap' indicator-dots='true' autoplay='true' interval='5000'>
+    <swiper-item>
+      <image src='/images/caixi/chuan_.jpg' data-cuisineClass='{{menus[0].cuisineClass}}'></image>
+    </swiper-item>
+    <swiper-item>
+      <image src='/images/caixi/xiang_.jpg' data-cuisineClass='{{menus[1].cuisineClass}}'></image>
+    </swiper-item>
+    <swiper-item>
+      <image src='/images/caixi/yue_.jpg' data-cuisineClass='{{menus[2].cuisineClass}}'></image>
+    </swiper-item>
+    <swiper-item>
+      <image src='/images/caixi/min_.jpg' data-cuisineClass='{{menus[3].cuisineClass}}'></image>
+    </swiper-item>
+    <swiper-item>
+      <image src='/images/caixi/zhe_.jpg' data-cuisineClass='{{menus[4].cuisineClass}}'></image>
+    </swiper-item>
+
+  </swiper>
+  <block wx:for="{{menus}}" wx:for-item="item">
+    <view catchtap='onMenuListTap' data-cuisineClass='{{item.cuisineClass}}'>
+      <template is="cuisineLumpTemplate" data="{{...item}}" />
+    </view>
+  </block>
+</view>
+
+<view wx:if="{{searchPanelShow}}" class='block'></view>
+
+  <block wx:if="{{searchPanelShow}}" wx:for="{{searchMenu}}" wx:for-item="item">
+    <view catchtap='onMenuDetailTap' data-id='{{item.id}}'>
+      <template is="menuLumpTemplate" data="{{...item}}" />
+    </view>
+  </block>

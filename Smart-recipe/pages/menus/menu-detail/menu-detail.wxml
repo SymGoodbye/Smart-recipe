@@ -1,0 +1,52 @@
+<!-- <import src="../menu-detail-page/menu-detail-template.wxml" />
+<view>
+  <template is="menuDetailTemplate" data="{{...menuDetail}}" />
+</view> -->
+
+ <view class='container'>
+    <image class='head_img' src='{{menuDetail.pic}}' mode="aspectFill"></image>
+    <view class='head'>
+      <text class='head_title'>{{menuDetail.name}}</text>
+      <view class='icon'>
+        <image class='icon_img' src='/images/icon/time_Bicon.png'></image>
+        <text class='icon_text'>{{menuDetail.cookingTime}}</text>
+      </view>
+      <view class='icon_'>
+        <image class='icon_img' src='/images/icon/people_Bicon.png'></image>
+        <text class='icon_text'>{{menuDetail.peopleNum}}</text>
+      </view>
+    </view>
+
+    <image class='title_img' src='{{menuDetail.pic}}'></image>
+    <view class='summary'>
+      <view class='tag'>
+        <image class='tag_img' src='/images/icon/food_icon.png'></image>
+        <text class='tag_text'>{{menuDetail.tag}}</text>
+      </view>
+      <!--       <text class='content'>{{content}}</text> -->
+      <!--       <view class="hr"></view> -->
+    </view>
+
+    <view class='tool'>
+      <view class='circle-img'>
+        <image wx:if="{{collected}}" catchtap='onCollectionTap' src='/images/icon/collection.png'></image>
+        <image wx:else catchtap='onCollectionTap' src='/images/icon/collection-anti.png'></image>
+        <image catchtap='onShareTap' class='share-img' src='/images/icon/share.png'></image>
+      </view>
+      <view class='horizon'></view>
+    </view>
+
+    <view class='list'>
+      <text class='list_title'>食材清单</text>
+      <view wx:for="{{menuDetail.material.mname}}" wx:for-item="mname" wx:for-index="i">
+        <view wx:for="{{menuDetail.material.amount}}" wx:for-item="amount" wx:for-index="j">
+          <view class='inner' wx:if="{{i==j}}">
+            <text class='mname'>{{mname}}</text>
+            <text class='amount'>{{amount}}</text>
+          </view>
+        </view>
+      </view>
+
+    </view>
+
+  </view>

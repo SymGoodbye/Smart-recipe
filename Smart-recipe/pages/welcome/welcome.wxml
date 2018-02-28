@@ -1,0 +1,7 @@
+<view class='welcome-container'>
+  <image class='welcome-img' src='/images/food.jpg'></image>
+  <text class='welcome-text'>Smart Recipes is better for you</text>
+  <view class='inner-container' bindtap='onTap'>
+    <text class='entrance'>Welcome</text>
+  </view>
+</view>
